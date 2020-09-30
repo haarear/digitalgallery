@@ -3,15 +3,17 @@
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <!-- we import arjs version without NFT but with marker + location based support -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+  <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+
 
   <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs>
-      <a-marker type="pattern" url="patterns/3.patt">
-<<<<<<< HEAD
-        <a-entity geometry="primitive: box; width: 1; height: 0.2; depth: 1" material="src: url(imgs/morcego.jpg)" id="geo1" class="geo1"">
-=======
-        <a-entity geometry="primitive: box; width: 1; height: 0.2; depth: 1" material="src: url(imgs/morcego.jpg)" id="geo1" class="geo1" onclick="alert('ola')">
->>>>>>> ae9ad4552744b3908f50318fc6d547e9708ebcc9
+
+    <a-scene embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector id="scene">
+
+      <a-marker raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="marker1" type="pattern" url="patterns/3.patt">
+
+        <a-entity geometry="primitive: box; width: 1; height: 0.2; depth: 1" material="src: url(imgs/morcego.jpg)" id="geo1" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10">
 
         </a-entity>
 
@@ -21,9 +23,10 @@
 
     </a-scene>
 
+    <script src="index3.js"></script>
+
   </body>
 
-  <script src="index3.js"></script>
 
 
 </html>
