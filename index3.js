@@ -39,8 +39,17 @@ document.addEventListener ('keypress', (event) => {
 	};
 });
 
+<<<<<<< HEAD
 
 var targetEl = document.querySelector('#geo1');
 targetEl.addEventListener('click', function() {
   targetEl.setAttribute('material', {color: 'red'});
 });
+=======
+var geoEl = document.querySelector('#geo1');
+
+geoEl.addEventListener("click", function () {
+  geoEl.setAttribute('material', {color: 'red'});
+  alert('hi!');
+})
+>>>>>>> ae9ad4552744b3908f50318fc6d547e9708ebcc9
