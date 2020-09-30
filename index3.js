@@ -13,6 +13,6 @@ document.getElementById('geo1').addEventListener('physicscollided', function (ev
 
 var geoEl = document.querySelector('#geo1');
 
-geoEl.addEventListener("touchstart", function () {
+geoEl.addEventListener("click", function () {
   geoEl.setAttribute('material', {color: 'red'});
 })
