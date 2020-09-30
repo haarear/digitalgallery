@@ -5,7 +5,8 @@
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
-    <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+    <script src="gesture-detector.js"></script>
+    <script src="gesture-handler.js"></script>
   </head>
 
   <body style="margin : 0px; overflow: hidden;">
@@ -14,7 +15,7 @@
 
       <a-marker raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="marker1" type="pattern" url="patterns/3.patt">
 
-        <a-entity geometry="primitive: box; width: 1; height: 0.2; depth: 1" material="src: url(imgs/morcego.jpg)" id="geo1" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10">
+        <a-entity geometry="primitive: box; width: 1; height: 0.2; depth: 1" material="src: url(imgs/morcego.jpg)" id="geo1" class="clickable" gesture-handler>
 
         </a-entity>
 
