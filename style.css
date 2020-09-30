@@ -17,3 +17,25 @@ body {
   padding: 10px;
 
 }
+
+#front-page-2 {
+
+  background-color: rgba(0,100,0,1);
+  margin: auto;
+  width: 50%;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 1%;
+  padding: 10px;
+
+}
+
+.btn {
+  background-color: rgba(0,120,0,1);
+  border: 1px solid black;
+  color: black;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+}
