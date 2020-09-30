@@ -15,4 +15,5 @@ var geoEl = document.querySelector('#geo1');
 
 geoEl.addEventListener("click", function () {
   geoEl.setAttribute('material', {color: 'red'});
+  alert('hi!');
 })
