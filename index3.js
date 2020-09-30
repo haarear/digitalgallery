@@ -7,6 +7,10 @@ document.getElementById('geo1').addEventListener('click', function (evt) {
   alert("hi!");
 });
 
-document.querySelector('geo1').addEventListener('physicscollided', function (event) {
+document.getElementById('geo1').addEventListener('physicscollided', function (event) {
   console.log('Entity collided with', event.detail.collidingEntity);
 });
+
+document.getElementById('geo1').addEventListener("touchstart", function (event) {
+  alert('touched!')
+})
