@@ -1,16 +1,46 @@
-// `click` event emitted by browser on mouse click.
-document.getElementById('geo1').addEventListener('ontouchstart', function (evt) {
-  alert("hi!");
+console.log("ola");
+
+document.addEventListener ('keypress', (event) => {
+  if (event.keyCode == 32) {
+		const AudioContext = window.AudioContext || window.webkitAudioContext;
+		const audioCtx = new AudioContext();
+		console.log(audioCtx);
+
+		//better with fetch api
+		const audio = new Audio("sound/plecauri.wav");
+		const source = audioCtx.createMediaElementSource(audio);
+		source.connect(audioCtx.destination);
+		audio.play();
+
+/*
+		const audioCtx = new AudioContext();
+		let buffer = null;
+
+		const load = () => {
+  	const request = new XMLHttpRequest();
+  	request.open("GET", "sound/plecauri.wav");
+  	request.responseType = "arraybuffer";
+  	request.onload = function() {
+    let undecodedAudio = request.response;
+    	audioCtx.decodeAudioData(undecodedAudio, (data) => buffer = data);
+  	};
+  	request.send();
+		};
+
+		const play = () => {
+  		const source = audioCtx.createBufferSource();
+  		source.buffer = buffer;
+  		source.connect(audioCtx.destination);
+  		source.start();
+		};
+
+
+	console.log("ika");*/
+	};
 });
 
-document.getElementById('geo1').addEventListener('click', function (evt) {
-  alert("hi!");
-});
 
-document.getElementById('geo1').addEventListener('physicscollided', function (event) {
-  console.log('Entity collided with', event.detail.collidingEntity);
+var targetEl = document.querySelector('#geo1');
+targetEl.addEventListener('click', function() {
+  targetEl.setAttribute('material', {color: 'red'});
 });
-
-document.getElementById('geo1').addEventListener("touchstart", function (event) {
-  alert('touched!')
-})
