@@ -11,6 +11,8 @@ document.getElementById('geo1').addEventListener('physicscollided', function (ev
   console.log('Entity collided with', event.detail.collidingEntity);
 });
 
-document.getElementById('geo1').addEventListener("touchstart", function (event) {
-  alert('touched!')
+var geoEl = document.querySelector('#geo1');
+
+geoEl.addEventListener("touchstart", function () {
+  geoEl.setAttribute('material', {color: 'red'});
 })
