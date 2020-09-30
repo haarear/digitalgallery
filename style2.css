@@ -119,7 +119,7 @@ height: 260px;
 }
 
 .code-display::before {
-content: "Expertise";
+content: "";/*"Expertise";*/
 position: absolute;
 top: -70px;
 left: 0;

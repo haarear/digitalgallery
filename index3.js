@@ -1,4 +1,5 @@
 console.log("ola");
+console.log("ver acender luz telemoveis ios e android");
 
 document.addEventListener ('keypress', (event) => {
   if (event.keyCode == 32) {
