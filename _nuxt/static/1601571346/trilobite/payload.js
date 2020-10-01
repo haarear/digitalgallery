@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/trilobite", {data:[{}],fetch:[],mutations:void 0});

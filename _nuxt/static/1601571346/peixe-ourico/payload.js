@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/peixe-ourico", {data:[{}],fetch:[],mutations:void 0});
