@@ -15,9 +15,8 @@
 
       <a-marker raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="marker1" type="pattern" url="patterns/3.patt">
 
-        <a-entity geometry="primitive: box; width: 1; height: 0.2; depth: 1" material="src: url(imgs/morcego.jpg)" id="geo1" class="clickable" gesture-handler>
-
-        </a-entity>
+        <a-entity geometry="primitive: box; width: 1; height: 0.2; depth: 1" material="src: url(imgs/morcego.jpg)" id="geo1" class="clickable" gesture-handler></a-entity>
+        <a-entity id="textArea" position="0 0 0.2" geometry="primitive: plane; width: 3; height:auto" material="color: #444444; transparent: true; opacity: 0.80;" text="anchor: center; baseline: center; wrapCount: 20; transparent: true; opacity: 0.90; color: #AAAAFF; value: Tick Counter: ???" updater></a-entity>
 
       </a-marker>
 
