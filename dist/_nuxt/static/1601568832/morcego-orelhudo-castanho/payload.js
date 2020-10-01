@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/morcego-orelhudo-castanho", {data:[{}],fetch:[],mutations:void 0});

@@ -66,6 +66,8 @@ AFRAME.registerComponent("gesture-detector", {
       const source = audioCtx.createMediaElementSource(audio);
       source.connect(audioCtx.destination);
       audio.play();
+
+
     }
 
     if (gestureStarted) {

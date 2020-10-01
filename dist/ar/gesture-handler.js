@@ -37,7 +37,6 @@ AFRAME.registerComponent("gesture-handler", {
 
   remove: function () {
 
-    console.log("TESTE AQUI DE REMOVER");
 
     this.el.sceneEl.removeEventListener("onefingermove", this.handleRotation);
     this.el.sceneEl.removeEventListener("twofingermove", this.handleScale);
