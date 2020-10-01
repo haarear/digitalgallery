@@ -55,6 +55,8 @@ AFRAME.registerComponent("gesture-detector", {
       this.el.emit(eventName, previousState);
 
       this.internalState.previousState = null;
+
+      alert("ola");
     }
 
     if (gestureStarted) {
