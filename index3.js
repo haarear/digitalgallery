@@ -40,17 +40,9 @@ document.addEventListener ('keypress', (event) => {
 	};
 });
 
-AFRAME.registerComponent('updater', {
+AFRAME.registerComponent('textnow', {
 
-	init: function()
-	{
-		this.num = 0;
-	},
-
-	tick: function (time, timeDelta)
-	{
-		this.num += 1;
-		this.el.setAttribute("text", "value", "Tick counter: " + this.num)
+	init: function() {
+				this.el.setAttribute("text", "value", "Tick counter: ");
 	}
-
 });
