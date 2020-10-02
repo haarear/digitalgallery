@@ -56,6 +56,8 @@ AFRAME.registerComponent("gesture-detector", {
 
       this.internalState.previousState = null;
 
+      alert(this.el);
+      
       //alert("ola");
       const AudioContext = window.AudioContext || window.webkitAudioContext;
       const audioCtx = new AudioContext();
