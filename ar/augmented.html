@@ -5,6 +5,7 @@
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
     <script src="gesture-detector.js"></script>
     <script src="gesture-handler.js"></script>
   </head>
@@ -13,14 +14,16 @@
 
     <a-scene embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector id="scene">
 
-      <a-marker raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="marker1" type="pattern" url="patterns/2.patt">
+      <!--<a-marker raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="marker1" type="pattern" url="patterns/2.patt">-->
+      <a-nft type="nft" url="patterns/ola.iset" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
 
         <a-entity geometry="primitive: box; width: 1; height: 0.2; depth: 1" material="src: url(imgs/orelhudo2.jpg)" id="geo1" class="clickable" gesture-handler></a-entity>
 
         <a-entity rotation="-90 0 0" position="0 0 1" text="width: 2; z-index: 9999; value: Tal como o nome comum deixa adivinhar, esta espécie caracteriza-se pelas suas enormes orelhas: quase do tamanho do próprio corpo. Tal como as restantes espécies Portuguesas, é de hábitos noturnos e alimenta-se de insetos e outros invertebrados, com uma predileção para borboletas noturnas. Também é conhecido por morcego-sussurador devido à diminuta intensidade das vocalizações, apresenta uma enorme sensibilidade auditiva para baixas frequências utilizando, por vezes, o movimento das próprias presas para as localizar e capturar."></a-entity>
 
-      </a-marker>
-
+      <!--</a-marker>-->
+    </a-nft>
+<!--
       <a-marker raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="marker1" type="pattern" url="patterns/3.patt">
 
         <a-entity geometry="primitive: box; width: 1; height: 0.2; depth: 1" material="src: url(imgs/quartzo.jpg)" id="geo1" class="clickable" gesture-handler></a-entity>
@@ -28,7 +31,7 @@
         <a-entity rotation="-90 0 0" position="0 0 1" text="width: 2; z-index: 9999; value: lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum."></a-entity>
 
       </a-marker>
-
+-->
       <a-entity camera></a-entity>
 
     </a-scene>
