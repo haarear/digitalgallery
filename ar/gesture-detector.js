@@ -71,6 +71,9 @@ AFRAME.registerComponent("gesture-detector", {
     }
 
     if (gestureStarted) {
+
+      console.log();
+
       currentState.startTime = performance.now();
 
       currentState.startPosition = currentState.position;
