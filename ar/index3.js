@@ -40,9 +40,6 @@ document.addEventListener ('keypress', (event) => {
 	};
 });
 
-AFRAME.registerComponent('textnow', {
-
-	init: function() {
-				this.el.setAttribute("text", "value", "Tick counter: ");
-	}
+document.querySelector('#refresh-button').addEventListener('click', function() {
+    alert("luis");
 });
