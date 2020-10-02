@@ -3,6 +3,7 @@ console.log("ver acender luz telemoveis ios e android");
 
 document.addEventListener ('keypress', (event) => {
   if (event.keyCode == 32) {
+    console.log("ika")
 		const AudioContext = window.AudioContext || window.webkitAudioContext;
 		const audioCtx = new AudioContext();
 		console.log(audioCtx);
@@ -38,8 +39,4 @@ document.addEventListener ('keypress', (event) => {
 
 	console.log("ika");*/
 	};
-});
-
-document.querySelector('#refresh-button').addEventListener('click', function() {
-    alert("luis");
 });

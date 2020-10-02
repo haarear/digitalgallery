@@ -57,9 +57,10 @@ AFRAME.registerComponent("gesture-detector", {
       this.internalState.previousState = null;
 
       //alert(this.el.sceneEl);
+      window.location.href = 'https://caixa-de-curiosidades.netlify.app/';
 
       //alert("ola");
-      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      /*const AudioContext = window.AudioContext || window.webkitAudioContext;
       const audioCtx = new AudioContext();
       console.log(audioCtx);
 
@@ -68,7 +69,7 @@ AFRAME.registerComponent("gesture-detector", {
       const source = audioCtx.createMediaElementSource(audio);
       source.connect(audioCtx.destination);
       audio.play();
-
+*/
 
     }
 
