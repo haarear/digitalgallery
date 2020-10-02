@@ -57,7 +57,7 @@ AFRAME.registerComponent("gesture-detector", {
       this.internalState.previousState = null;
 
       //alert(this.el.sceneEl);
-      window.location.href = 'https://caixa-de-curiosidades.netlify.app/';
+      window.location.href = 'https://biodiversidadesaidosarmarios.netlify.app/';
 
       //alert("ola");
       /*const AudioContext = window.AudioContext || window.webkitAudioContext;
