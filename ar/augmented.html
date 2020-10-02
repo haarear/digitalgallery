@@ -14,9 +14,6 @@
   <body style="margin : 0px; overflow: hidden;">
 
     <a-scene embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector id="scene">
-      <a-assets>
-        <img id="homeThumbnail" src="imgs/morcego.jpg">
-      </a-assets>
 
       <a-marker raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="marker1" type="pattern" url="patterns/2.patt">
 
@@ -24,8 +21,8 @@
         <!--<a-entity id="textArea" position="0 0 0" geometry="primitive: plane; width: 5; height:5" material="color: #444444; transparent: false; opacity: 0.9;" text="anchor: center; baseline: center; wrapCount: 20; transparent: true; opacity: 0.90; color: #AAAAFF; value: Tick Counter: ???" updater></a-entity>-->
         <a-entity rotation="-90 0 0" id="refresh-button" position="0 0 1" text="width: 2; z-index: 9999; value: Tal como o nome comum deixa adivinhar, esta espécie caracteriza-se pelas suas enormes orelhas: quase do tamanho do próprio corpo. Tal como as restantes espécies Portuguesas, é de hábitos noturnos e alimenta-se de insetos e outros invertebrados, com uma predileção para borboletas noturnas. Também é conhecido por morcego-sussurador devido à diminuta intensidade das vocalizações, apresenta uma enorme sensibilidade auditiva para baixas frequências utilizando, por vezes, o movimento das próprias presas para as localizar e capturar."></a-entity>
         <!--<a-plane color="white" rotation="-90 0 0" position="0 0 1" width="2" material="transparent: false; opacity: 0.90" text="value: Morcego Orelhudo"></a-plane>
-        <a-text  color="red" rotation="-90 0 0" align="center" scale="2 2 2"></a-text>-->
-        <a-entity link="href: index.html; title: My Homepage; image: #homeThumbnail"></a-entity>
+        <a-text  color="red" rotation="-90 0 0" align="center" scale="2 2 2"></a-text>
+        <a-entity link="href: index.html; title: My Homepage; image: #homeThumbnail"></a-entity>-->
 
       </a-marker>
 
